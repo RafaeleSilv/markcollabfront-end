@@ -1,0 +1,156 @@
+.sobre_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre_div1{
+    display: flex;
+    text-align: center;
+}
+
+.sobre_subDiv1{
+    margin: 40px;
+}
+
+#markcollab{
+    color:#2C65F6;
+    font-size: 50px;
+}
+
+#justlogo{
+    width: 200px;
+}
+
+.sobre_div2{
+    display: flex;
+    width: 80%;
+    margin-top: 30px;
+}
+
+#meeting{
+    width: 500px;
+}
+
+.sobre_subdiv2{
+   margin-left: 40px;
+}
+
+.sobre_h2{
+    color: #2C65F6;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.sobre_div3{
+    display: flex;
+    width: 80%;
+    height: 200px;
+    margin: 100px;
+    border-bottom: 0.001mm solid black;
+}
+
+#maos{
+    width: 500px;
+}
+
+.sobre_subdiv3{
+   margin-left: 40px;
+}
+
+.sobre_div4{
+   text-align: center;
+    margin-bottom: 80px;
+}
+
+#vamosConversar{
+    color: #2C65F6;
+    font-size: 45px;
+}
+
+#sobre_btn{
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    background-color: #2C65F6;
+    border-style: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+#sobre_btn:hover{
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+@media (max-width:1025px){
+    .sobre_div2{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    #meeting{
+        width: 500px;
+        margin-left: 70px;
+    }
+    
+    .sobre_subdiv2{
+       margin: auto;
+    }
+
+    .sobre_div3{
+        flex-direction: column;
+        border-style: none;
+    }
+
+    #maos{
+        margin-left: 80px;
+    }
+
+    .sobre_div4{
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 501px){
+    #justlogo{
+        display: none;
+    }
+
+    .sobre_div2{
+        margin-top: 30px;
+    }
+
+    #meeting{
+        width: 300px;
+        margin-left: 0px;
+    }
+
+    .sobre_subDiv1{
+        margin: auto;
+    }
+
+    #maos{
+        width: 300px;
+        margin: auto;
+    }
+
+    .sobre_div4{
+        margin-top: 80px;
+    }
+
+    .sobre_h2{
+        font-size: 35px;
+    }
+
+    .sobre_subdiv3{
+        margin: auto;
+    }
+
+    #vamosConversar{
+        font-size: 35px;
+    }
+     
+}

@@ -1,0 +1,72 @@
+.buscar-projetos-container {
+    padding: 20px;
+  }
+  
+  .buscar-projetos-title {
+    font-size: 2rem;
+    color: #2C65F6;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .buscar-projetos-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .buscar-projeto-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .buscar-projeto-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .buscar-projeto-description {
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+  }
+  
+  .buscar-projeto-button {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.875rem;
+  }
+  
+  .buscar-projeto-button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .buscar-projetos-title {
+      font-size: 1.5rem;
+    }
+  
+    .buscar-projetos-list {
+      padding: 10px;
+    }
+  
+    .buscar-projeto-item {
+      padding: 10px;
+    }
+  
+    .buscar-projeto-title {
+      font-size: 1.2rem;
+    }
+  
+    .buscar-projeto-description {
+      font-size: 0.875rem;
+    }
+  }
+  

@@ -1,0 +1,112 @@
+.conteudo {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 100px; /* Adicione espaço suficiente para compensar a altura da navbar */
+    margin-bottom: 200px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header Perfil */
+.header-perfil {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+.perfil-foto {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.habilidades {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.habilidade {
+    background-color: #00bcd4;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Seções com bordas */
+.sobre-mim, .portifolio, .avaliacoes {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.sobre-mim h2, .portifolio h2, .avaliacoes h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Portfólio */
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.projeto img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Avaliações */
+.avaliacoes-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.avaliacao {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+  .h3-PerfilContratante{
+    padding: 20px;
+  }
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #2C65F6;
+    padding: 10px 0;
+   
+  }
+  
+  .navbar-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .navbar-list li a:hover {
+    color: #00bcd4;
+  }

@@ -1,0 +1,90 @@
+/* A sobrecarga de fundo (overlay) para o pop-up */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Para garantir que fique acima de outros elementos */
+  }
+  
+  /* Estilo do conteúdo do pop-up */
+  .popup-content {
+    background-color: white;
+    width: 416px;  /* Largura reduzida pela metade (832px -> 416px) */
+    height: 302px; /* Altura reduzida pela metade (604px -> 302px) */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif; /* Aplicando a fonte Poppins */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilo da barra azul no topo */
+  .popup-header {
+    background-color: #2C65F6; /* Cor azul fornecida */
+    color: white;
+    padding: 3px 7px;  /* Reduzindo o padding da barra */
+    text-align: left; /* Alinha o texto à esquerda */
+    font-weight: normal; /* Retirando o negrito */
+    font-size: 14px; /* Reduzindo o tamanho do texto */
+  }
+  
+  /* Corpo do pop-up */
+  .popup-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Faz com que a área do corpo do pop-up cresça e preencha o espaço restante */
+    text-align: center;
+    padding: 20px 10px; /* Reduzindo o padding */
+  }
+  
+  /* Texto principal da pergunta */
+  .popup-body h2 {
+    margin-bottom: 20px; /* Distância para os botões */
+    font-size: 17.5px; /* Reduzindo o tamanho da pergunta (35px -> 17.5px) */
+    color: #333;
+    font-weight: normal; /* Retirando o negrito */
+    white-space: nowrap; /* Garantir que o texto fique em uma linha */
+    line-height: 1.2; /* Ajusta o espaçamento entre as linhas */
+  }
+  
+  /* Botões no corpo do pop-up */
+  .popup-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Reduzindo o gap entre os botões */
+    margin-top: 10px; /* Espaço acima dos botões */
+  }
+  
+  .popup-button {
+    padding: 15px 35px; /* Reduzindo o padding dos botões */
+    font-size: 0.9rem; /* Reduzindo o tamanho da fonte dos botões */
+    border: none;
+    border-radius: 20px; /* Bordas mais arredondadas */
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+    font-weight: bold; /* Botões em negrito */
+    text-transform: uppercase; /* Coloca os textos dos botões em caixa alta */
+  }
+  
+  .popup-button.freelancer {
+    background-color: #2C65F6; /* Cor azul fornecida */
+  }
+  
+  .popup-button.contratante {
+    background-color: #EF4366; /* Cor vermelha fornecida */
+  }
+  
+  .popup-button:hover {
+    opacity: 0.8;
+  }
+  

@@ -1,0 +1,130 @@
+.cadastro-container {
+  display: flex;
+
+  flex-direction: row; /* Para telas grandes */
+
+  height: 100vh;
+}
+
+.cadastro-left {
+  background-color: #007bff;
+  width: 50%;
+
+  min-height: 100vh;
+
+}
+
+.cadastro-right {
+  background-color: #fff;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px; /* Adiciona um espaço interno */
+  box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+
+}
+
+.cadastro-form {
+  background-color: #fff;
+
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto; /* Permite scroll se necessário */
+  max-height: 90vh; /* Limita a altura em telas pequenas */
+  scrollbar-width: none; /* Para navegadores baseados no Firefox */
+    -ms-overflow-style: none; /* Para navegadores baseados no IE/Edge */
+  margin: 0 auto;
+
+}
+
+.cadastro-title {
+  font-size: 2rem;
+  color: #2C65F6;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cadastro-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.cadastro-field label {
+  margin-bottom: 5px;
+
+}
+
+.cadastro-field input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.cadastro-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.cadastro-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .cadastro-container {
+    flex-direction: column; /* Ajusta a ordem dos elementos */
+
+  }
+
+  .cadastro-left,
+  .cadastro-right {
+    width: 100%;
+
+    min-height: auto; /* Permite ajustar melhor o conteúdo */
+  } 
+
+  .cadastro-left {
+    height: 150px; /* Reduz a altura da seção azul */
+
+  }
+
+  .cadastro-title {
+    font-size: 1.5rem;
+  }
+
+  .cadastro-form {
+    max-width: 90%; /* Deixa o formulário mais compacto */
+    padding: 15px; /* Ajusta o espaço interno */
+  }
+}
+  
+
+.login-arrow {
+  position: absolute; /* Permite ajustar com top e left */
+  top: 20px; /* Distância do topo */
+  left: 20px; /* Distância da lateral esquerda */
+}
+.cadastro-field input {
+  padding: 12px; /* Aumenta o espaçamento interno */
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+  width: 90%; /* Reduz a largura dos inputs */
+  margin: 0 auto; /* Centraliza os inputs dentro do form */
+}
+

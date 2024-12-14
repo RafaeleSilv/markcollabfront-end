@@ -1,0 +1,89 @@
+.servicos_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.servicos_div1{
+    text-align: center;
+    margin: 40px;
+}
+
+#oque_fazemos{
+    color:#2C65F6;
+    font-size: 50px;
+}
+
+.servicos_div2{
+    background-color: #0946DF;
+}
+
+
+.servicos_subdiv2{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+#conheca_nosso_servico{
+    text-align: center;
+    margin: 40px;
+    color: white;
+    font-size: 35px;
+}
+
+.servicos_h3{
+    color: white;
+    margin: 10px 10px 10px 0px;
+}
+
+.servicos_p{
+    color: white;
+    width: 70%;
+}
+
+.div2_content{
+    border-bottom: 0.001mm solid white;
+    width: 90%;
+}
+
+.servicos_div3{
+    background-color: #222222;
+    padding: 100px;
+}
+
+.servicos_subdiv3{
+    margin: auto;
+    text-align: center;
+}
+
+#empurrao{
+    color: #2C65F6;
+    text-align: center;
+   
+    font-size: 30px;
+}
+
+#oferecemos{
+    text-align: center;
+    color: white;
+    
+}
+
+@media(max-width:1056px){
+    .servicos_subdiv2{
+        flex-direction: column;
+    }
+
+    #trafego, #marketing{
+        border-bottom:  0.001mm solid white;
+        width: 90%;
+    }
+}
+
+@media(max-width:504px){
+    #oque_fazemos{
+        font-size: 40px;
+    }
+}
+

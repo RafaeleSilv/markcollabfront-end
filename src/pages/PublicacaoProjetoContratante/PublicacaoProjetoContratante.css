@@ -1,0 +1,103 @@
+.publicacao-container {
+    padding: 20px;
+  }
+  
+  .publicacao-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .publicacao-title {
+    font-size: 2.5rem;
+    color: #2C65F6;
+  }
+  
+  .publicacao-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .publicacao-field {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .publicacao-field label {
+    margin-bottom: 5px;
+    
+  }
+  
+  .publicacao-field input,
+  .publicacao-field select,
+  .publicacao-field textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1rem;
+  }
+  
+  .publicacao-radio-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .publicacao-radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .publicacao-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.25rem;
+  }
+  
+  .publicacao-button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .publicacao-title {
+      font-size: 2rem;
+    }
+  
+    .publicacao-form {
+      padding: 10px;
+    }
+  }
+  .meusprojetos-button {
+    display: block; /* Para ocupar a linha inteira e permitir a centralização */
+    margin: 20px auto; /* Auto nas laterais centraliza o elemento horizontalmente */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    background-color: #007bff; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Mostra o cursor de "clique" */
+    text-decoration: none; /* Remove sublinhado no texto */
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+}
+.meusprojetos-button:hover {
+  background-color: #0056b3;
+}
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.char-count {
+  font-size: 0.8rem;
+  color: gray;
+  margin-top: 5px;
+}

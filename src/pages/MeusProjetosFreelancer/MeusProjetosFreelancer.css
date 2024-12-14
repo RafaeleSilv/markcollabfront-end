@@ -1,0 +1,114 @@
+.meusprojetosfreelancer-container {
+  padding: 20px;
+}
+
+.meusprojetosfreelancer-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.meusprojetosfreelancer-title {
+  font-size: 2.5rem;
+  color: #2C65F6;
+}
+
+.meusprojetosfreelancer-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  gap: 10px;
+}
+
+.meusprojetosfreelancer-status {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.meusprojetosfreelancer-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.meusprojetosfreelancer-button:hover {
+  background-color: #0056b3;
+}
+
+.meusprojetosfreelancer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.meusprojetosfreelancer-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.meusprojetosfreelancer-item-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.meusprojetosfreelancer-item-time {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.meusprojetosfreelancer-item-button {
+  background-color: #2C65F6;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.meusprojetosfreelancer-item-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.meusprojetosfreelancer-item-option {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.meusprojetosfreelancer-item-option:hover {
+  background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .meusprojetosfreelancer-title {
+    font-size: 2rem;
+  }
+
+  .meusprojetosfreelancer-controls {
+    flex-direction: column;
+  }
+
+  .meusprojetosfreelancer-button,
+  .meusprojetosfreelancer-status {
+    width: 100%;
+  }
+}

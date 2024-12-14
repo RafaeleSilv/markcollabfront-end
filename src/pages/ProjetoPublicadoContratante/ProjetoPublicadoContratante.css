@@ -1,0 +1,54 @@
+.projeto-publicado-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(80vh - 80px); /* Ajuste conforme a altura do Navbar e Footer */
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.projeto-publicado-title {
+  font-size: 2.5rem;
+  color: #2C65F6;
+  margin-bottom: 20px;
+}
+
+.projeto-publicado-button {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.projeto-publicado-button:hover {
+  background-color: #0056b3;
+}
+
+.projeto-publicado-footer-text {
+  color: #666;
+  margin-top: 20px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .projeto-publicado-title {
+    font-size: 2rem;
+  }
+
+  .projeto-publicado-button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .projeto-publicado-footer-text {
+    font-size: 0.875rem;
+  }
+}

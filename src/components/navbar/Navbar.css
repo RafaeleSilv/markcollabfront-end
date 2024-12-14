@@ -1,0 +1,245 @@
+.blue_div {
+    display: flex;
+    justify-content: space-between;
+    background-color:#2C65F6;
+    height: 44px;
+}
+
+
+.first_nav_icons{
+    margin-left: 20px;
+}
+
+.nav_social_icons{
+    color: white;
+    margin: 15px 10px;
+    
+}
+
+.nav_icons{
+    color: white;
+    margin-top: 10px;
+}
+
+.second_nav_icons{
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.nav_mail_icons{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.nav2{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.logo{
+    margin: 20px;
+}
+
+.nav2_list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 80px;
+    gap: 40px;
+    font-size:20px;
+ 
+   
+}
+
+.nav2_list li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav2_icons {
+    font-size: 20px; 
+    color: inherit; 
+    text-decoration: none;
+  }
+  
+  .nav2_icons svg {
+    font-size: 30px;
+  }
+  
+  .nav2_icons:hover {
+    color: #007bff; 
+  }
+
+  .btn_sairConta{
+    font-size: 20px;
+    color: inherit; 
+    text-decoration: none;
+    background-color: #007bff;
+    border-style: none;
+    margin-left: 10px;
+  }
+
+  .btn_sairConta svg{
+    font-size: 30px;
+  }
+
+  .btn_sairConta:hover {
+    color: #007bff;
+    background-color: #2C65F6;
+  }
+
+  #projetos{
+    background-color: #007bff; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 50px; 
+    
+  }
+
+  #projetos:hover{
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  }
+
+  .menu-toggle {
+    display: none; /* Esconde por padrão */
+  }
+
+  #login_btn{
+    background-color: #007bff;
+    color: white; 
+    padding: 10px 30px; 
+    border-radius: 50px; 
+    font-size: 15px;
+  }
+  
+  #login_btn:hover{
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  }
+
+ #cadastro_btn{
+  background-color: white;
+  color: #007bff; 
+  border-style: solid;
+  border-width: 2px;
+  padding: 10px 20px; 
+  border-radius: 50px; 
+  font-size: 15px;
+ }
+
+ #cadastro_btn:hover{
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+ }
+  
+  /* Exibe o ícone de menu em telas menores */
+  @media (max-width: 947px) {
+    .menu-toggle {
+      display: block; /* Mostra o ícone de menu */
+      cursor: pointer; /* Altera o cursor ao passar o mouse */
+      background-color: #007bff; /* Cor de fundo azul */
+      border-radius: 10px; /* Borda arredondada */
+      padding: 10px; /* Espaçamento interno */
+      margin: 35px; /* Margem */
+      color: white; /* Cor do ícone */
+    }
+
+    .nav2_list {
+        display: none; /* Esconde a lista de navegação */
+      }
+
+      .nav2_icons:hover {
+        color: black; 
+      }
+
+      .btn_sairConta:hover{
+        color: black;
+        background-color: rgba(255, 255, 255, 0.2); /* Efeito hover para melhorar a usabilidade */
+        border-radius: 500px;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        /*padding: 15px 120px 15px 0px;*/
+        cursor: pointer;
+        width: 200px;
+        height:50px;
+      }
+      
+      .nav2_list{
+        margin: 0px;
+      }
+
+        #projetos:hover{
+            background-color: rgba(255, 255, 255, 0.2);
+            color: black;
+        }
+
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px; /* Largura da sidebar */
+    background-color: #007bff; /* Cor de fundo da sidebar */
+    color: white; /* Cor do texto */
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000; /* Certifique-se de que a sidebar esteja acima de outros elementos */
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Garante que os itens fiquem alinhados à esquerda */
+  }
+  
+  .sidebar li {
+    margin: 10px 0; /* Espaçamento entre os itens */
+  }
+  
+  .sidebar a {
+    display: flex; /* Para alinhar ícone e texto na mesma linha */
+    align-items: center; /* Alinha verticalmente ícones e textos */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-size: 20px; /* Tamanho do texto */
+  }
+  
+  .sidebar a svg {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    font-size: 30px; /* Tamanho do ícone */
+  }
+  
+  #projetos {
+    background-color: #007bff; /* Mantém o fundo azul */
+    color: white; /* Cor do texto */
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: none;
+    margin-left: 0; /* Remove qualquer margem extra à esquerda */
+  }
+  
+  /* Espaçamento extra para a sidebar */
+  .sidebar li a {
+    padding: 10px 10px; /* Espaçamento extra em cima e embaixo dos itens */
+  }
+  
+  .sidebar li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efeito hover para melhorar a usabilidade */
+    border-radius: 50px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  }
+  
+ 
+  
+  .close-sidebar {
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Sem bordas */
+    color: white; /* Cor do texto */
+    font-size: 24px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para pointer */
+    margin-bottom: 20px; /* Margem inferior */
+  }
+
+  

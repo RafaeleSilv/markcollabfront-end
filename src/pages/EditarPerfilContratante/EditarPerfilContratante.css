@@ -1,0 +1,99 @@
+.editar-perfil-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.editar-perfil-content {
+  flex: 1;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.editar-perfil-content h1 {
+  color: #2C65F6;
+  margin-bottom: 20px;
+}
+
+.editar-perfil-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.editar-perfil-form label {
+  text-align: left;
+  font-size: 1rem;
+}
+
+.editar-perfil-form input,
+.editar-perfil-form select,
+.editar-perfil-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  font-size: 1rem;
+}
+
+.editar-perfil-form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.salvar-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.salvar-button:hover {
+  background-color: #0022aa;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .editar-perfil-content {
+    padding: 10px;
+  }
+
+  .editar-perfil-form label {
+    font-size: 0.9rem;
+  }
+
+  .salvar-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #2C65F6;
+  padding: 10px 0;
+ 
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar-list li a:hover {
+  color: #00bcd4;
+}
